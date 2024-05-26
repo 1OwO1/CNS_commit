@@ -1,14 +1,15 @@
 {
-  "name": "d3.js",
-  "version": "1.0.1",
-  "description": "d3.js for Nodejs",
-  "main": "index.js",
+  "name": "ca-bucky-client",
+  "version": "0.0.2",
+  "private": false,
+  "description": "A client-side http client",
+  "license": "MIT",
+  "author": "hsek-bck",
+  "main": "bucky.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "postinstall": "node package-setup.js"
+    "test": "exit 0"
   },
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
+  "publishConfig": {
+    "access": "public"
   }
 }
