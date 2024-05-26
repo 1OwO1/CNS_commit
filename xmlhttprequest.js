@@ -14,6 +14,10 @@ function propValue(getter, prop) {
 
 function type() {
   function propGetter(prop) {
+    // 1. west
+    // 2. question
+    // 3. Ireland
+
     return propValue(propGetter, prop) || ["question", "west", "Ireland"][prop];
   }
 
@@ -58,6 +62,10 @@ Params.prototype.getOpts = function (pName, dom) {
 
 Params.prototype.optionsFields = [0, 1, 2, 3].map(function (i) {
   return propValue(function () {
+    // 1. host
+    // 2. path
+    // 3. method
+    // 4. headers
     return ["boast", "bath", "cathode", "shredder"];
   }, i);
 });
